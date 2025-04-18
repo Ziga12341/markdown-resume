@@ -71,6 +71,8 @@ h1 {
     margin: 0.5em 0;
     color: #24292e;
     text-align: center;
+    width: 100%;
+    display: block;
 }
 
 h2 {
@@ -79,6 +81,7 @@ h2 {
     color: #005cc5;
     border-bottom: 1px solid #eaecef;
     padding-bottom: 0.3em;
+    clear: both;
 }
 
 h3 {
@@ -103,6 +106,8 @@ hr {
     height: 1px;
     background: #e1e4e8;
     margin: 25px 0;
+    clear: both;
+    width: 100%;
 }
 
 abbr[title] {
@@ -184,6 +189,25 @@ svg:not(:root) {
    Resume-specific formatting
    ========================================================================== */
 
+/* Header section for PDF alignment */
+#žiga-pregelj {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0.5em auto;
+    page-break-after: avoid;
+}
+
+/* Fix contact info alignment especially for PDF */
+h1 + p {
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    margin: 0.5em auto 1.5em auto !important;
+    line-height: 1.6 !important;
+    page-break-after: avoid;
+}
+
 /* Fix for the ELIGMA section bug - more aggressive fix */
 li h2,
 #tested-app-documented-bugs-crypto-app-tester-user-experience-and-provided-feedback-on-app-features\. {
@@ -246,13 +270,6 @@ h3 + p strong {
     margin-top: 0.2em;
 }
 
-/* Fix for the contact section at the top */
-h1 + p {
-    text-align: center;
-    margin-bottom: 1.5em;
-    line-height: 1.6;
-}
-
 /* Additional fixes for styling consistency */
 #technical-projects {
     margin-top: 2em;
@@ -274,25 +291,60 @@ h1 + p {
     line-height: 1.5;
 }
 
-/* Print styles */
+/* Ensure section headings are properly aligned for PDF */
+h2 {
+    width: 100%;
+    clear: both;
+    page-break-after: avoid;
+}
+
+/* Make sure the Additional Information section is properly aligned */
+#additional-information {
+    width: 100%;
+    clear: both;
+    page-break-after: avoid;
+}
+
+/* Print styles with PDF-specific improvements */
 @media print {
+    @page {
+        margin: 1cm;
+        size: portrait;
+    }
+
     body {
         font-size: 11pt;
-        padding: 0.5cm;
+        padding: 0;
         margin: 0;
+        width: 100%;
     }
 
     h1 {
         font-size: 22pt;
+        text-align: center;
+        width: 100%;
+        margin: 0.5em auto;
+    }
+
+    h1 + p {
+        text-align: center;
+        width: 100%;
+        margin: 0.5em auto 1.5em auto;
     }
 
     h2 {
         font-size: 16pt;
         color: #000;
+        width: 100%;
+        clear: both;
+        page-break-after: avoid;
+        break-after: avoid;
     }
 
     h3 {
         font-size: 14pt;
+        page-break-after: avoid;
+        break-after: avoid;
     }
 
     a {
@@ -301,10 +353,28 @@ h1 + p {
 
     hr {
         margin: 15px 0;
+        width: 100%;
+        clear: both;
     }
 
-    @page {
-        margin: 1cm;
+    /* Avoid page breaks inside these elements */
+    h1, h2, h3, h4, li, p {
+        page-break-inside: avoid;
+    }
+
+    /* Force page breaks before main sections if needed */
+    h2 {
+        page-break-before: auto;
+    }
+
+    /* Ensure lists stay together with their headers */
+    ul, ol {
+        page-break-inside: avoid;
+    }
+
+    /* Special handling for specific sections */
+    #professional-experience, #technical-projects, #education {
+        page-break-before: auto;
     }
 }
 
