@@ -1,77 +1,147 @@
+# ŽIGA PREGELJ
+
+📍 Ljubljana, Slovenia  
+📧 zpregelj@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/zigapregelj/) | [GitHub](https://github.com/ziga12341/)
+
 ---
-margin-left: 2cm
-margin-right: 2cm
-margin-top: 1cm
-margin-bottom: 2cm
-title: Your Resume in Markdown
-description-meta: 'This is the meta description for the HTML file, and one day the PDF file, for better SEO?'
-keywords:
-  - 'php'
-  - 'mysql'
-  - 'linux'
-author:
-- I am the author
-subject: 'Subject'
+
+## **PROFESSIONAL SUMMARY**
+
+I am passionate about solving complex problems and continuously expanding my technical toolkit. I've worked with multiple languages, but Python remains my first choice. Additionally, I specialize in data processing and automation. I also bring experience in QA engineering with a focus on automated end-to-end (E2E) web testing, greatly improving product stability.
+
+Key strengths:
+
+✅ AI-powered automation (LLM integrations, clustering, embeddings)
+
+✅ Test automation & CI/CD (Selenium, pytest, Docker, TeamCity)
+
+✅ Web & backend development (Django, FastAPI, Next.js)
+
+✅ Algorithmic problem-solving (optimizing code with recursion, memoization, and efficient data processing)
+
+
 ---
-###### [[example.com](https://example.com)] . [ me@example.com] . [ 123 456 7890 ]
 
-### This is where you have your statement, that describes who you are and what you're looking for. Hopefully it's not cliche and it stands out in a good way
+## **TECHNICAL SKILLS**
 
-## Skills
+- **Programming Languages:** Python (5+ years), JavaScript/TypeScript, R, Kotlin
+- **AI:** OpenAI API, Embeddings, Clustering (Hierarchical, K-means), Language Models
+- **Data Processing:** NumPy, Pandas, scikit-learn, Data Transformation, Statistical Analysis
+- **Web Development:** Django, FastAPI, React, Next.js, HTML/CSS, Tailwind CSS
+- **Testing & QA:** Selenium WebDriver, pytest, Unit Testing, E2E Testing
+- **DevOps & CI/CD:** Docker, Containerization, TeamCity, Portainer
+- **Mobile Development:** Android (Jetpack Compose, Kotlin)
+- **Databases:** PostgreSQL, MongoDB, SQLite
+- **Development Tools:** Git, JIRA, Figma, PyCharm, Jupyter Notebooks
 
-```programming```
-```devops```
-```databases```
-```containers```
-```linux systems administration```
-```webservers```
-```project management```
-```system architecture & design```
-```entrepreneurship```
-```load/stress testing```
-```WordPress```
+---
 
-**Programming**: Lua, Haskell, Erlang, Go, Javascript
-**Databases**: MySQL, Postgres, sqlite, SQL Server, Oracle, Pick
-**Linux**: Gentoo, Alpine, CentOS, Ubuntu, Debian
-**DevOps**: Ansible, Chef, Kubernetes, etc.
+## **PROFESSIONAL EXPERIENCE**
 
-## Experience
+### **RAZUM d.o.o.**
+**AI Engineer / Android Developer / QA Engineer** | *April 2022 — Present*
 
-### CEO and Founder, Pied Piper
+#### **AI Engineering & Data Science:**
+- **Email Intelligence System:** Developed an email clustering solution that automatically generates FAQs from customer support emails using hierarchical clustering, embeddings, and GPT-4o
+- **Customer Support AI:** Created AI-powered solutions for Gorenje, Petrol, and Generali that automatically classify, summarize, and extract key information from customer messages
+- **Deployment Specialist:** Successfully deployed and maintained 15+ AI applications (or DEMO pages) using Docker, TeamCity, and Portainer
+- **AI Chat Platform Configuration:** Implemented and customized LibreChat (fork) with integrations for OpenAI, Google, and Anthropic models, configuring authentication and user management, empowering employees to utilize AI tools effectively
 
-start-date-end-date, City, State and remote
+#### **Android Development:**
+- **Banking App Enhancement:** Implemented transaction handling features and reusable UI components using Jetpack Compose and Kotlin, collaborating with a team of 5 android developers and more than 20 from other teams (BE, iOS, SA, QA, PM,...)
+- **UI Component Development:** Created modular, reusable UI patterns from Figma designs
 
-- Things you did/do here
-- More things that you do here.
+#### **QA Engineering & Test Automation:**
+- **End-to-End Testing:** Implemented comprehensive test automation for doberavto.si using Selenium WebDriver
+- **CI/CD Integration:** Incorporated automated tests into TeamCity pipelines, catching 70% of regressions before production
+- **SPAR Shopping Automation:** Developed a Selenium-based system to automate grocery ordering with Git integration and Slack notifications
+- **Cross-Platform Testing:** Conducted manual testing for native mobile apps (iOS/Android) and web applications (working on various projects 5–10)
 
-**Technologies used:** Tell people about the languages, apps, technologies you used to succeed at this job.
+---
 
-### Senior Software Architect, Hooli
+### **UKC Ljubljana (University Medical Centre Ljubljana)**
+**System Administrator** | *April 2020 – April 2022*
 
-2010-2016, San Francisco, CA
+- Managed **2,000+ users** in clinical IT systems  
+- Provided IT support for **700+ users**, streamlining issue resolution  
+- Contributed to web application development using JavaScript, PHP, and Tailwind CSS
+- Helped in **telemedicine - IT project**  
 
-- This is the job you had before your latest job
-- Did you do anything that wasn't part of your job description, but you excelled at?
+---
 
-**Technologies used:** Tell people about the languages, apps, technologies you used to succeed at this job.
+### **OTHER PROFESSIONAL EXPERIENCE**
 
-## Awards & Recognition
+#### **GREEN CONSULTING d.o.o.** *(2019)*  
+- Performed client field advisory and soil analysis for grass surfaces. Managed documentation and commercial tasks.
 
-- Winner TechCrunch Disrupt 2001
-- People Magazine's sexiest man alive at 123 My Address, MyCity, TX
+#### **KNAUF INSULATION d.o.o. | Urbanscape** *(2017)*  
+- Conducted gardening workshops, coordinated sales, managed orders (SAP), and collaborated on product testing.
 
-## Projects
+#### **MOERINGS–VIRGINIA Research and Development** *(USA)* *(2017 - 5 weeks on site)*
+- Tested and calibrated green roof systems in a stormwater lab.
+- Executed green roof experiments, analyzed data, prepared reports. Improved product designs based on findings.
 
-**[*Personal Blog*](http://luther.io)** (2021-present)
+#### **ELIGMA d.o.o.** *(2018)*  
+- Tested app, documented bugs, crypto app tester user experience, and provided feedback on app features.
+---
 
-- Authored a series of articles covering a wide variety of topics and tools related to technology like PHP, WordPress, Ruby, Linux, Docker, and Privacy.
+## **TECHNICAL PROJECTS**
 
-## Education
+### **AI-Powered FAQ Generation from Email Correspondence** (*2024*)
+- **Challenge:** Transform thousands of unstructured customer emails into organized, searchable knowledge base, group similar emails into the same cluster
+- **Solution:** Built demo page where similar emails are in the same clusters and also clustering answers to these questions, using embedding calculations, hierarchical clustering, and GPT-4o summarization
+- **Tech Stack:** Python, Pandas, OpenAI API, scikit-learn, Docker
 
-### Masters in BS, Example University
+### **Advent of Code Challenge Solver** (*2024*)
+- **Achievement:** Solved 40/50 programming challenges without AI assistance or external references
+- **Implementation:** Utilized advanced algorithms including graph traversal and recursion
+- **Skills Demonstrated:** Problem decomposition, algorithm selection, optimization, and testing
+- **Tech Stack:** Python, Data Structures (heaps, dictionaries, sets), Algorithms (BFS/DFS, Dijkstra)
 
-- 4.0 GPA
-- Deans List
-- Member of xyz club, etc.
-- I didn't really go to college so I don't know what you would put here.
+### **Banking App android** (*2023-2024*)
+- **Challenge:** Modernize transaction-related components in Slovenia's largest banking app
+- **Solution:** Refactored transaction handling logic and implemented new UI patterns using Jetpack Compose
+- **Technical Details:** Created reusable components, implemented complex conditional logic for transaction types
+- **Tech Stack:** Kotlin, Jetpack Compose, Android Studio, Figma
+
+### **SPAR Online Shopping Automation** (*2024*)
+- **Challenge:** Automate recurring grocery orders from remote shopping lists
+- **Solution:** Developed a robust Selenium-based solution handling the complete ordering workflow
+- **Key Features:** Remote GitLab list integration, headless browser execution, and Slack notifications
+- **Tech Stack:** Python, Selenium WebDriver, Docker, GitPython, Slack API
+
+
+---
+
+## **CONTINUOUS LEARNING**  
+
+- **HarvardX - CS50 Web Programming (2023)**  
+  - Built **full-stack applications** (auctions, social networks, email clients) using Django & JavaScript  
+
+- **Udemy - Pandas & NumPy for Data Analysis (2024)**  
+  - Applied **data transformation, visualization & processing techniques**  
+
+- **University of Ljubljana — Statistics 1 & 2 (2017)**  
+  - Used statistics in my Master theses **statistical analysis & hypothesis testing** using R programming language
+
+---
+
+## **EDUCATION**
+
+### **University of Ljubljana, Bio-technical Faculty**  
+🎓 **Master of Science in Agronomy** (*2013 – 2017*)
+- **Thesis:** Measuring microorganism respiration in remediated & original soil samples
+- **Relevant Coursework:** Statistics (R programming), Experimental Design, Data Analysis
+
+🎓 **Bachelor of Science in Agronomy** (*2009 – 2013*)
+- **Erasmus Exchange:** Universidade de Lisboa, Portugal
+- **Relevant Coursework:** Biology, Chemistry, Mathematics, Statistics
+
+---
+
+## **ADDITIONAL INFORMATION**
+
+- **Languages:** English (Professional) | Slovenian (Native) | Croatian (Very Good) | Spanish (Basic) | German (Basic)
+- **Work Arrangement:** Primarily remote with weekly in-office collaboration
+- **Interests:** Problem-solving, algorithmic puzzles, continuous learning, handball (15+ years of training), healthy lifestyle
