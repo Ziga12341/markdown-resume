@@ -66,6 +66,24 @@ a:active, a:hover {
    Typography
    ========================================================================== */
 
+/* Fix for title block header alignment */
+#title-block-header {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 28px;
+    margin: 0.5em 0;
+    color: #24292e;
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-weight: bold;
+}
+
 h1 {
     font-size: 28px;
     margin: 0.5em 0;
@@ -82,6 +100,7 @@ h2 {
     border-bottom: 1px solid #eaecef;
     padding-bottom: 0.3em;
     clear: both;
+    width: 100%;
 }
 
 h3 {
@@ -189,23 +208,13 @@ svg:not(:root) {
    Resume-specific formatting
    ========================================================================== */
 
-/* Header section for PDF alignment */
-#žiga-pregelj {
-    text-align: center;
-    width: 100%;
-    display: block;
-    margin: 0.5em auto;
-    page-break-after: avoid;
-}
-
-/* Fix contact info alignment especially for PDF */
-h1 + p {
+/* Contact information alignment */
+#title-block-header + p {
     text-align: center !important;
     width: 100% !important;
     display: block !important;
-    margin: 0.5em auto 1.5em auto !important;
+    margin: 0 auto 1.5em auto !important;
     line-height: 1.6 !important;
-    page-break-after: avoid;
 }
 
 /* Fix for the ELIGMA section bug - more aggressive fix */
@@ -225,6 +234,11 @@ li h2,
 }
 
 /* Professional Summary section */
+#professional-summary {
+    width: 100%;
+    display: block;
+}
+
 #professional-summary + p {
     margin-bottom: 1em;
 }
@@ -247,6 +261,11 @@ p:nth-of-type(7) {
 }
 
 /* Experience section formatting */
+#professional-experience {
+    width: 100%;
+    display: block;
+}
+
 #professional-experience + h3 {
     margin-top: 1em;
 }
@@ -257,11 +276,21 @@ h3 + p strong {
 }
 
 /* Format technical skills section */
+#technical-skills {
+    width: 100%;
+    display: block;
+}
+
 #technical-skills + ul li {
     margin-bottom: 0.7em;
 }
 
 /* Education formatting */
+#education {
+    width: 100%;
+    display: block;
+}
+
 #education + h3 {
     margin-bottom: 0.3em;
 }
@@ -270,12 +299,26 @@ h3 + p strong {
     margin-top: 0.2em;
 }
 
-/* Additional fixes for styling consistency */
+/* Additional Information section alignment fix */
+#additional-information {
+    width: 100%;
+    display: block;
+    clear: both;
+}
+
+/* Fix for Technical Projects section */
 #technical-projects {
+    width: 100%;
+    display: block;
     margin-top: 2em;
 }
 
 /* Fix spacing after OTHER PROFESSIONAL EXPERIENCE section */
+#other-professional-experience {
+    width: 100%;
+    display: block;
+}
+
 #other-professional-experience + h4 {
     margin-top: 1em;
 }
@@ -291,18 +334,10 @@ h3 + p strong {
     line-height: 1.5;
 }
 
-/* Ensure section headings are properly aligned for PDF */
-h2 {
+/* Continuous learning section */
+#continuous-learning {
     width: 100%;
-    clear: both;
-    page-break-after: avoid;
-}
-
-/* Make sure the Additional Information section is properly aligned */
-#additional-information {
-    width: 100%;
-    clear: both;
-    page-break-after: avoid;
+    display: block;
 }
 
 /* Print styles with PDF-specific improvements */
@@ -319,14 +354,13 @@ h2 {
         width: 100%;
     }
 
-    h1 {
-        font-size: 22pt;
+    #title-block-header, .title {
         text-align: center;
         width: 100%;
         margin: 0.5em auto;
     }
 
-    h1 + p {
+    #title-block-header + p {
         text-align: center;
         width: 100%;
         margin: 0.5em auto 1.5em auto;
@@ -339,6 +373,7 @@ h2 {
         clear: both;
         page-break-after: avoid;
         break-after: avoid;
+        display: block;
     }
 
     h3 {
@@ -372,9 +407,13 @@ h2 {
         page-break-inside: avoid;
     }
 
-    /* Special handling for specific sections */
-    #professional-experience, #technical-projects, #education {
-        page-break-before: auto;
+    /* Make sure all sections are properly aligned */
+    #professional-summary, #technical-skills, #professional-experience,
+    #technical-projects, #education, #additional-information,
+    #continuous-learning, #other-professional-experience {
+        width: 100%;
+        display: block;
+        clear: both;
     }
 }
 
@@ -385,7 +424,7 @@ h2 {
         font-size: 13px;
     }
 
-    h1 {
+    .title, h1 {
         font-size: 24px;
     }
 

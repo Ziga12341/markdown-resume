@@ -3,7 +3,7 @@ margin-left: 2cm
 margin-right: 2cm
 margin-top: 1cm
 margin-bottom: 2cm
-title: Žiga Pregelj Resume
+title: ŽIGA PREGELJ
 description-meta: 'Žiga Pregelj Resume - Software Developer, QA Lead, AI Engineer'
 keywords:
     - Python
@@ -57,12 +57,8 @@ keywords:
     - Team Collaboration
     - Documentation
     - Continuous Learning
-author:
-- Žiga Pregelj
 subject: 'Žiga Pregelj Resume'
 ---
-
-# ŽIGA PREGELJ
 
 📍 Ljubljana, Slovenia  
 📧 zpregelj@gmail.com  
