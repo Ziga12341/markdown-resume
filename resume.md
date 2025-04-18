@@ -1,3 +1,67 @@
+---
+margin-left: 2cm
+margin-right: 2cm
+margin-top: 1cm
+margin-bottom: 2cm
+title: Žiga Pregelj Resume
+description-meta: 'Žiga Pregelj Resume - Software Developer, QA Lead, AI Engineer'
+keywords:
+    - Python
+    - JavaScript
+    - TypeScript
+    - Kotlin
+    - HTML
+    - CSS
+    - SQL
+    - Django
+    - React
+    - Jetpack Compose
+    - Selenium
+    - PyTest
+    - Flask
+    - NumPy
+    - Pandas
+    - Docker
+    - Git
+    - CI/CD
+    - RESTful APIs
+    - MongoDB
+    - OpenAI GPT
+    - Embeddings
+    - Clustering
+    - Docker Compose
+    - Portainer
+    - Nginx
+    - Traefik
+    - CI/CD pipelines
+    - Android Development
+    - Mobile UI/UX
+    - Test Automation
+    - Manual Testing
+    - Page Object Model
+    - MS Office
+    - Outlook
+    - AI
+    - Software Development
+    - Systems Administration
+    - Agricultural Science
+    - Software Development
+    - Frontend
+    - Backend
+    - Automation Engineering
+    - AI-powered solutions
+    - Test Automation Frameworks
+    - Mobile Application Development
+    - Problem Solving
+    - Adaptability
+    - Team Collaboration
+    - Documentation
+    - Continuous Learning
+author:
+- Žiga Pregelj
+subject: 'Žiga Pregelj Resume'
+---
+
 # ŽIGA PREGELJ
 
 📍 Ljubljana, Slovenia  
