@@ -184,26 +184,20 @@ svg:not(:root) {
    Resume-specific formatting
    ========================================================================== */
 
-/* Fix for the ELIGMA section bug */
-#eligma-d\\.o\\.o\\.-2018 + ul li h2 {
-    font-size: inherit;
-    display: inline;
-    border: none;
-    color: inherit;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
-}
-
-/* Alternative fix for the ELIGMA section if the above doesn't work */
-ul li h2 {
-    font-size: inherit;
-    display: inline;
-    border: none;
-    color: inherit;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
+/* Fix for the ELIGMA section bug - more aggressive fix */
+li h2,
+#tested-app-documented-bugs-crypto-app-tester-user-experience-and-provided-feedback-on-app-features\. {
+    font-size: 14px !important;
+    display: inline !important;
+    border: none !important;
+    color: #333 !important;
+    font-weight: normal !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    text-decoration: none !important;
+    line-height: 1.5 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 
 /* Professional Summary section */
@@ -211,19 +205,21 @@ ul li h2 {
     margin-bottom: 1em;
 }
 
-/* Checkmark items in summary */
-p + p:first-of-type {
-    margin-top: 0.3em;
+/* Key strengths section - specifically target these paragraphs */
+#professional-summary + p + p {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
 }
 
-p:first-child {
-    margin-top: 0;
-}
-
-/* Specifically target checkmark items */
-p:has(text("✅")) {
-    margin: 0.3em 0;
-    padding-left: 0.5em;
+/* Target all checkmark items */
+p:nth-of-type(4),
+p:nth-of-type(5),
+p:nth-of-type(6),
+p:nth-of-type(7) {
+    margin: 0.3em 0 0.3em 1em !important;
+    padding-left: 0;
+    text-indent: -1em;
 }
 
 /* Experience section formatting */
@@ -262,27 +258,14 @@ h1 + p {
     margin-top: 2em;
 }
 
-/* Fix spacing after ADDITIONAL PROFESSIONAL EXPERIENCE section */
-#additional-professional-experience + h4 {
+/* Fix spacing after OTHER PROFESSIONAL EXPERIENCE section */
+#other-professional-experience + h4 {
     margin-top: 1em;
 }
 
 /* Better spacing for Technical Projects section items */
 #technical-projects + h3 {
     margin-top: 1em;
-}
-
-/* Format the Key Strengths section better */
-#professional-summary + p + p {
-    margin-top: 0.8em;
-    margin-bottom: 0.3em;
-    font-weight: 500;
-}
-
-/* Style the checkmark items consistently */
-p:nth-of-type(3), p:nth-of-type(4), p:nth-of-type(5), p:nth-of-type(6) {
-    padding-left: 15px;
-    margin: 0.3em 0;
 }
 
 /* Better education formatting */
