@@ -115,6 +115,11 @@ h4 {
     color: #24292e;
 }
 
+p {
+    margin: 0.5em 0 0.7em 0;
+    line-height: 1.5;
+}
+
 hr {
     border: 0;
     height: 1px;
