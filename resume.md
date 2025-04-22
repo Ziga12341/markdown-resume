@@ -56,9 +56,9 @@ keywords:
 subject: 'Žiga Pregelj Resume'
 ---
 
-📍 Ljubljana, Slovenia  
-📧 zpregelj@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/zigapregelj/) | [GitHub](https://github.com/ziga12341/)
+Ljubljana, Slovenia  
+zpregelj@gmail.com  
+[LinkedIn](https://www.linkedin.com/in/zigapregelj/) | [GitHub](https://github.com/ziga12341/)
 
 ---
 
