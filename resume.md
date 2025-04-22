@@ -68,13 +68,13 @@ I am passionate about solving complex problems and continuously expanding my tec
 
 Key strengths:
 
-✅ AI-powered automation (LLM integrations, clustering, embeddings)
+AI-powered automation (LLM integrations, clustering, embeddings)
 
-✅ Test automation & CI/CD (Selenium, pytest, Docker, TeamCity)
+Test automation & CI/CD (Selenium, pytest, Docker, TeamCity)
 
-✅ Web & backend development (Django, FastAPI, Next.js)
+Web & backend development (Django, FastAPI, Next.js)
 
-✅ Algorithmic problem-solving (optimizing code with recursion, memoization, and efficient data processing)
+Algorithmic problem-solving (optimizing code with recursion, memoization, and efficient data processing)
 
 
 ---
@@ -186,11 +186,11 @@ Key strengths:
 ## **EDUCATION**
 
 ### **University of Ljubljana, Bio-technical Faculty**  
-🎓 **Master of Science in Agronomy** (*2013 – 2017*)
+**Master of Science in Agronomy** (*2013 – 2017*)
 - **Thesis:** Measuring microorganism respiration in remediated & original soil samples
 - **Relevant Coursework:** Statistics (R programming), Experimental Design, Data Analysis
 
-🎓 **Bachelor of Science in Agronomy** (*2009 – 2013*)
+**Bachelor of Science in Agronomy** (*2009 – 2013*)
 - **Erasmus Exchange:** Universidade de Lisboa, Portugal
 - **Relevant Coursework:** Biology, Chemistry, Mathematics, Statistics
 
