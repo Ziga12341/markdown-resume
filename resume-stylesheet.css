@@ -66,10 +66,10 @@ a:active, a:hover {
    Typography
    ========================================================================== */
 
-/* Fix for title block header alignment */
+/* Fix for title block header alignment - MODIFIED: aligned left */
 #title-block-header {
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin: 0 0 1em 0;
     padding: 0;
 }
@@ -78,7 +78,7 @@ a:active, a:hover {
     font-size: 28px;
     margin: 0.5em 0;
     color: #24292e;
-    text-align: center;
+    text-align: left;
     width: 100%;
     display: block;
     font-weight: bold;
@@ -88,7 +88,7 @@ h1 {
     font-size: 28px;
     margin: 0.5em 0;
     color: #24292e;
-    text-align: center;
+    text-align: left;
     width: 100%;
     display: block;
 }
@@ -208,12 +208,12 @@ svg:not(:root) {
    Resume-specific formatting
    ========================================================================== */
 
-/* Contact information alignment */
+/* Contact information alignment - MODIFIED: aligned left */
 #title-block-header + p {
-    text-align: center !important;
+    text-align: left !important;
     width: 100% !important;
     display: block !important;
-    margin: 0 auto 1.5em auto !important;
+    margin: 0 0 1.5em 0 !important;
     line-height: 1.6 !important;
 }
 
@@ -355,15 +355,15 @@ h3 + p strong {
     }
 
     #title-block-header, .title {
-        text-align: center;
+        text-align: left;
         width: 100%;
-        margin: 0.5em auto;
+        margin: 0.5em 0;
     }
 
     #title-block-header + p {
-        text-align: center;
+        text-align: left;
         width: 100%;
-        margin: 0.5em auto 1.5em auto;
+        margin: 0.5em 0 1.5em 0;
     }
 
     h2 {
