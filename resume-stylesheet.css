@@ -26,14 +26,16 @@ audio:not([controls]) {
    ========================================================================== */
 
 html {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+                 Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+                 Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
     color: #333;
     max-width: 850px;
@@ -70,15 +72,15 @@ a:active, a:hover {
 #title-block-header {
     width: 100%;
     text-align: center;
-    margin: 0 0 1em 0;
-    padding: 0;
+    margin: 20px 0 1em 0;
+    padding: 20px 0;
 }
 
 .title {
-    font-size: 28px;
+    font-size: 32px;
     margin: 0.5em 0;
     color: #24292e;
-    text-align: center;
+    text-align: left;
     width: 100%;
     display: block;
     font-weight: bold;
@@ -230,7 +232,8 @@ li h2,
     background: none !important;
     text-decoration: none !important;
     line-height: 1.5 !important;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+                 Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 
 /* Professional Summary section */
@@ -523,7 +526,7 @@ blockquote {
     color: #777;
 }
 
-/* Go-top button styling */
+/* Go‐top button styling */
 .go-top {
     position: fixed;
     bottom: 2em;
@@ -539,4 +542,46 @@ blockquote {
 
 .go-top:hover {
     background-color: #ccc;
+}
+
+/* ==========================================================================
+   CUSTOM OVERRIDES
+   ========================================================================== */
+
+/* 1) Left‐align header and photo */
+/* 2) Show photo before your name via a ::before pseudo-element */
+/* 3) Hide the original inline‐img in the personal‐info <p> */
+
+#title-block-header {
+    text-align: left !important;
+}
+
+#title-block-header .title {
+    display: inline-block !important;
+    margin: 0 !important;
+    position: relative !important;
+    padding-left: 220px !important;
+}
+
+#title-block-header .title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 200px;   /* ← your photo width */
+    height: 200px;  /* ← your photo height */
+    background: url("./canva-cycle-design.png") no-repeat center;
+    background-size: cover;
+    border-radius: 50%; /* optional: makes it round */
+}
+
+#title-block-header + p {
+    text-align: center !important;
+    margin: 0 0 1.5em 0 !important;
+    padding: 0 !important;
+}
+
+#title-block-header + p img {
+    display: none !important;
 }
