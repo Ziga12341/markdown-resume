@@ -55,17 +55,16 @@ keywords:
 subject: 'Žiga Pregelj Resume'
 ---
 
-# ŽIGA PREGELJ
-
-<p>
-  <img src="./canva-cycle-design.png" alt="cv-photo">
-  📍 Ljubljana, Slovenia
-<br>
-  📧 zpregelj@gmail.com
-<br>
-  🔗 <a href="https://www.linkedin.com/in/zigapregelj/">LinkedIn</a> | <a href="https://github.com/ziga12341/">GitHub</a>
-<br>
-</p>
+<div class="header-container">
+  <img src="./canva-cycle-design.png" alt="cv-photo" class="profile-photo">
+  <h1 class="header-name">ŽIGA PREGELJ</h1>
+  <div class="contact-info">
+  📍 Ljubljana, Slovenia <br>
+  📧 zpregelj@gmail.com <br>
+  🔗 <a href="https://www.linkedin.com/in/zigapregelj/">LinkedIn</a> |
+  <a href="https://github.com/ziga12341/">GitHub</a>
+  </div>
+</div>
 ---
 
 ## **PROFESSIONAL SUMMARY**

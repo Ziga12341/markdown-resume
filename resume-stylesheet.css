@@ -183,42 +183,93 @@ ul li, ol li {
   line-height: 1.5;
 }
 
-/* Special formatting for experience sections */
-h3 + p {
-  margin-top: 0.2em;
-  font-style: italic;
-  color: #586069;
-}
-
-h4 + ul {
-  margin-top: 0.4em;
-}
-
 /* ==========================================================================
-   Embedded content
+   Header Container Layout
    ========================================================================== */
 
-img {
-  border: 0;
-  max-width: 100%;
+/* Header Layout - Flex container for one-line layout */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-svg:not(:root) {
-  overflow: hidden;
+/* Profile photo styling */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Name styling - centered */
+.header-name {
+  font-size: 28px;
+  margin: 0;
+  text-align: center;
+  flex: 1;
+  color: #24292e;
+}
+
+/* Contact info styling - right aligned */
+.contact-info {
+  text-align: right;
+  flex-shrink: 0;
+  line-height: 1.6;
+  min-width: 200px;
+}
+
+/* Fix for pre/code blocks in contact info */
+.contact-info pre,
+.contact-info code {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+               Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  white-space: pre-line;
+  text-align: right;
+  line-height: 1.6;
+  overflow: visible;
+}
+
+/* Styling for the alternative HTML approach */
+.location, .email, .links {
+  margin-bottom: 5px;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-photo {
+    margin-bottom: 15px;
+  }
+
+  .header-name {
+    margin: 10px 0;
+  }
+
+  .contact-info,
+  .contact-info pre,
+  .contact-info code {
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 
 /* ==========================================================================
    Resume-specific formatting
    ========================================================================== */
-
-/* Contact information alignment */
-#title-block-header + p {
-  text-align: center !important;
-  width: 100% !important;
-  display: block !important;
-  margin: 0 auto 1.5em auto !important;
-  line-height: 1.6 !important;
-}
 
 /* Fix for the ELIGMA section bug */
 li h2,
@@ -251,53 +302,93 @@ li h2,
   font-weight: 600;
 }
 
-/* Experience, Skills, Education, Projects, etc. – keep all your existing rules... */
-
-/* (I’ve omitted re-listing every single section rule for brevity –
-   all of your current rules remain exactly the same up to this point.) */
-
 /* ==========================================================================
    Print styles
    ========================================================================== */
 
 @media print {
-  /* your existing print rules… */
+  body {
+    margin: 0;
+    padding: 10mm;
+    font-size: 12pt;
+    color: #000;
+    background-color: #fff;
+  }
+
+  /* Ensure proper print layout */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  h1 {
+    font-size: 19pt;
+  }
+
+  h2 {
+    font-size: 17pt;
+    border-bottom-color: #000;
+  }
+
+  h3 {
+    font-size: 15pt;
+  }
+
+  h4 {
+    font-size: 14pt;
+  }
+
+  img, table, figure {
+    page-break-inside: avoid;
+  }
+
+  /* Remove certain elements in print */
+  a:after {
+    content: none !important;
+  }
+
+  /* Color adjustments for print */
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  hr {
+    background: #000;
+  }
+
+  /* Adjust header for print */
+  .header-container {
+    margin-bottom: 15pt;
+  }
 }
 
 /* ==========================================================================
-   Mobile responsiveness
+   Mobile responsiveness (additional)
    ========================================================================== */
 
 @media screen and (max-width: 600px) {
-  /* your existing mobile rules… */
-}
+  body {
+    padding: 15px;
+  }
 
-/* ==========================================================================
-   CUSTOM OVERRIDES – *THIS* is the only bit that changed
-   ========================================================================== */
+  h1 {
+    font-size: 24px;
+  }
 
-/* -----------------------------------------------------------------------
-   Photo & Contact-Info Layout (150×150 + multiline via real newlines)
-   ----------------------------------------------------------------------- */
+  h2 {
+    font-size: 20px;
+  }
 
-/* Target the very first <p> after your <h1> (your photo + contact block) */
-h1 + p {
-  position: relative;       /* containing block for the headshot */
-  padding-left: 170px;      /* 150px image + 20px gutter */
-  text-align: right;        /* right-align the text */
-  min-height: 150px;        /* ensure it’s tall enough for the headshot */
-  margin-top: 0.5em;        /* tweak if you like */
-  margin-bottom: 1em;
-  /*white-space: pre-line;    !* <-- respect actual newline characters *!*/
-}
+  h3 {
+    font-size: 17px;
+  }
 
-/* Absolutely position your headshot */
-h1 + p img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;        /* crop/scale to fill */
-  border-radius: 50%;       /* optional: round */
+  h4 {
+    font-size: 15px;
+  }
+
+  ul, ol {
+    padding-left: 20px;
+  }
 }

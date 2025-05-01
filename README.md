@@ -1,3 +1,11 @@
+this command will copy the content of the file to clipboard
+
+```Bash
+cat resume-photo.html resume-stylesheet.css resume.md | pbcopy
+```
+  
+
+
 # Markdown Resume
 
 
