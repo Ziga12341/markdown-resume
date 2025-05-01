@@ -68,13 +68,10 @@ I am passionate about solving complex problems and continuously expanding my tec
 
 Key strengths:
 
-✅ AI-powered automation (LLM integrations, clustering, embeddings)
-
-✅ Test automation & CI/CD (Selenium, pytest, Docker, TeamCity)
-
-✅ Web & backend development (Django, FastAPI, Next.js)
-
-✅ Algorithmic problem-solving (optimizing code with recursion, memoization, and efficient data processing)
+- AI-powered automation (LLM integrations, clustering, embeddings)
+- Test automation & CI/CD (Selenium, pytest, Docker, TeamCity)
+- Web & backend development (Django, FastAPI, Next.js)
+- Algorithmic problem-solving (optimizing code with recursion, memoization, and efficient data processing)
 
 
 ---
