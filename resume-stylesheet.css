@@ -410,7 +410,7 @@ h3 + p strong {
         page-break-inside: avoid;
     }
 
-    /* Make sure all sections are properly aligned */
+    /* Ensure sections remain full width */
     #professional-summary, #technical-skills, #professional-experience,
     #technical-projects, #education, #additional-information,
     #continuous-learning, #other-professional-experience {
@@ -526,7 +526,7 @@ blockquote {
     color: #777;
 }
 
-/* Go‐top button styling */
+/* Go-top button styling */
 .go-top {
     position: fixed;
     bottom: 2em;
@@ -548,40 +548,37 @@ blockquote {
    CUSTOM OVERRIDES
    ========================================================================== */
 
-/* 1) Left‐align header and photo */
-/* 2) Show photo before your name via a ::before pseudo-element */
-/* 3) Hide the original inline‐img in the personal‐info <p> */
+/* -----------------------------------------------------------------------
+   Photo & Contact-Info Layout (UPDATED for 150×150 + vertical centering)
+   ----------------------------------------------------------------------- */
 
-#title-block-header {
-    text-align: left !important;
+/* Target the very first <p> after your <h1> (your photo + contact block) */
+h1 + p {
+    position: relative;       /* containing block for the absolutely-positioned img */
+    padding-left: 170px;      /* 150px image + 20px gutter */
+    display: flex;            /* flex container so we can center the text vertically */
+    flex-wrap: wrap;          /* allow our forced <br/> breaks to wrap lines */
+    align-items: center;      /* vertical center of each flex line inside the 150px tall box */
+    justify-content: flex-end;/* push text to the right edge */
+    min-height: 150px;        /* ensure the <p> is always at least 150px tall */
+    margin-top: 0.5em;        /* tweak to taste */
+    margin-bottom: 1em;
 }
 
-#title-block-header .title {
-    display: inline-block !important;
-    margin: 0 !important;
-    position: relative !important;
-    padding-left: 220px !important;
-}
-
-#title-block-header .title::before {
-    content: "";
+/* Absolutely position your headshot inside that <p> */
+h1 + p img {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 0;
-    transform: translateY(-50%);
-    width: 200px;   /* ← your photo width */
-    height: 200px;  /* ← your photo height */
-    background: url("./canva-cycle-design.png") no-repeat center;
-    background-size: cover;
-    border-radius: 50%; /* optional: makes it round */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;        /* crop/scale if necessary */
+    border-radius: 50%;       /* optional round */
 }
 
-#title-block-header + p {
-    text-align: center !important;
-    margin: 0 0 1.5em 0 !important;
-    padding: 0 !important;
-}
-
-#title-block-header + p img {
-    display: none !important;
+/* Force your existing <br/> elements to break the flex lines */
+h1 + p br {
+    flex-basis: 100%;
+    width: 0;
+    height: 0;
 }
